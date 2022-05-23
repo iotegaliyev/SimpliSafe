@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Profile">
+
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="650sp"
+        android:layout_marginHorizontal="15sp"
+        android:layout_marginVertical="15sp"
+        android:background="@drawable/design"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <View
+        android:id="@+id/background_balance_profile"
+        android:layout_width="150sp"
+        android:layout_height="100sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/design2"
+        app:layout_constraintEnd_toStartOf="@+id/background_age_profile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_profile" />
+
+    <View
+        android:id="@+id/background_age_profile"
+        android:layout_width="150sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/design2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_profile" />
+
+    <View
+        android:id="@+id/background_address_profile"
+        android:layout_width="150sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/design2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_balance_profile" />
+
+    <View
+        android:id="@+id/background_cardNumber_profile"
+        android:layout_width="150sp"
+        android:layout_height="100sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/design2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toEndOf="@+id/background_address_profile"
+        app:layout_constraintTop_toBottomOf="@+id/background_age_profile" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_navigation" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/ava"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fullName_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Islam Otegaliyev"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/username_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="iotegaliyev"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullName_profile" />
+
+    <TextView
+        android:id="@+id/textBalance_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Balance"
+        android:textColor="@color/dark_blue"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_balance_profile" />
+
+    <TextView
+        android:id="@+id/balance_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="100000₸"
+        android:textColor="@color/dark_blue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBalance_profile" />
+
+    <TextView
+        android:id="@+id/textAge_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Age"
+        android:textColor="@color/dark_blue"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/background_age_profile"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/background_age_profile"
+        app:layout_constraintTop_toTopOf="@+id/background_age_profile" />
+
+    <TextView
+        android:id="@+id/age_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="1000"
+        android:textColor="@color/dark_blue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/background_age_profile"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/background_age_profile"
+        app:layout_constraintTop_toBottomOf="@+id/textAge_profile" />
+
+    <TextView
+        android:id="@+id/textAddress_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Address"
+        android:textColor="@color/dark_blue"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/background_address_profile"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/background_address_profile"
+        app:layout_constraintTop_toTopOf="@+id/background_address_profile" />
+
+    <TextView
+        android:id="@+id/address_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Auezov, 22"
+        android:textColor="@color/dark_blue"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/background_address_profile"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/background_address_profile"
+        app:layout_constraintTop_toBottomOf="@+id/textAddress_profile" />
+
+    <TextView
+        android:id="@+id/textCardNumber_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Card Number"
+        android:textColor="@color/dark_blue"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/background_cardNumber_profile"
+        app:layout_constraintStart_toStartOf="@+id/background_cardNumber_profile"
+        app:layout_constraintTop_toTopOf="@+id/background_cardNumber_profile" />
+
+    <TextView
+        android:id="@+id/cardNumber_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="1234123412341234"
+        android:textColor="@color/dark_blue"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/background_cardNumber_profile"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/background_cardNumber_profile"
+        app:layout_constraintTop_toBottomOf="@+id/textCardNumber_profile" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="300sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:cornerRadius="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_address_profile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

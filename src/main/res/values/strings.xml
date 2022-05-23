@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SimpliSafe</string>
+    <string name="welcome">Welcome to\n<b>SimpliSafe!</b></string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="username">username</string>
+    <string name="fullName">full name</string>
+    <string name="age">age</string>
+    <string name="card">card number</string>
+    <string name="address">address</string>
+    <string name="password">password</string>
+    <string name="home">Home</string>
+    <string name="call">Call</string>
+    <string name="pay">Pay</string>
+    <string name="profile">Profile</string>
+    <string name="logOut">Log out</string>
+    <string name="access">Access control</string>
+</resources>
